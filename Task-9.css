@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.con {
+    height: 120px;
+    width: 100%;
+    border: solid;
+    position: relative;
+}
+.sub1 {
+    height: 100px;
+    width: 30%;
+    border: solid;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 10px;
+    background: transparent;
+    transition: box-shadow 5s;
+}
+.sub2 {
+    height: 100px;
+    width: 30%;
+    border: solid;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: transform 5s;
+}
+
+ul {
+    background-color: #232f3e;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub1:hover {
+    box-shadow: 5px 5px 5px red;
+}
+.sub2:hover {
+    box-shadow: 5px 5px 5px blue;
+    transform: rotate(60deg);
+}
+.ani {
+    border: solid;
+    height: 100px;
+    width: 30%;
+    animation-name: clrchg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes clrchg
+{
+    0%
+    {
+        background-color: green;
+        left: 50px;
+        left: 0;
+    }
+    25%    {
+        background-color: red;
+        left: 50px;
+        top: 0;
+    }
+    50%    {
+        background-color: aqua;
+        left: 50px;
+        top: 50 px;
+    }
+    75%    {
+        background-color: blue;
+        top: 50px;
+        left: 0;
+
+    }
+    100%    {
+        background-color: brown;
+        top: 0;
+        left: 0;
+    }
+}

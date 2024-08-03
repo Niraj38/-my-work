@@ -1,0 +1,48 @@
+<!-- Task-18:- Make Simple Calculator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="Task-18.js" defer></script>
+    <style>
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="number" id="value1" placeholder="Value 1">
+        <input type="number" id="value2" placeholder="Value 2">
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="percentage">%</option>
+        </select>
+        <button id="calculate">Calculate</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

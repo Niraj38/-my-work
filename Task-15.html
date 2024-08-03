@@ -1,0 +1,59 @@
+<!--Task-15:- Use of Operator. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators and Expressions</title>
+</head>
+<body>
+    <h1>JavaScript Operators and Expressions</h1>
+    <div id="output"></div>
+
+    <script>
+        // Variables
+        let a = 10, b = 5;
+
+        // Operators
+        let results = {
+            addition: a + b,
+            subtraction: a - b,
+            multiplication: a * b,
+            division: a / b,
+            modulus: a % b,
+            isEqual: a == b,
+            isNotEqual: a != b,
+            isGreaterThan: a > b,
+            isLessThan: a < b,
+            andOperator: a > 0 && b > 0,
+            orOperator: a > 0 || b < 0,
+            notOperator: !(a > b),
+            max: a > b ? a : b
+        };
+
+        // Output
+        document.getElementById('output').innerHTML = `
+            <h2>Arithmetic</h2>
+            <p>Addition: ${results.addition}</p>
+            <p>Subtraction: ${results.subtraction}</p>
+            <p>Multiplication: ${results.multiplication}</p>
+            <p>Division: ${results.division}</p>
+            <p>Modulus: ${results.modulus}</p>
+
+            <h2>Comparison</h2>
+            <p>Equal: ${results.isEqual}</p>
+            <p>Not Equal: ${results.isNotEqual}</p>
+            <p>Greater Than: ${results.isGreaterThan}</p>
+            <p>Less Than: ${results.isLessThan}</p>
+
+            <h2>Logical</h2>
+            <p>AND: ${results.andOperator}</p>
+            <p>OR: ${results.orOperator}</p>
+            <p>NOT: ${results.notOperator}</p>
+
+            <h2>Ternary</h2>
+            <p>Max: ${results.max}</p>
+        `;
+    </script>
+</body>
+</html>

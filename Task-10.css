@@ -1,0 +1,30 @@
+.m1{
+	border: solid;
+	height: 550px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+	flex-direction: column;
+}
+
+.s1{
+	border: solid;
+	height: 150px;
+	width: 25%;
+}
+
+.s2{
+	border: solid;
+	height: 150px;
+	width: 25%;
+}
+
+.s3
+{
+	border: solid;
+	height: 150px;
+	width: 25%;
+}
